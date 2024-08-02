@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --bgcolor: #000;
+    --white: #ffffff;
+    --btncolor: #FFF706;
+    --bgnav: #000000CC;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--bgcolor);
+}
+
+/* header start */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/banner-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 12.5rem;
+    text-shadow: 0 0 25px var(--bgcolor) ;
+}
+
+
+.rpo-btn {
+    width: 95%;
+    height: 8%;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--btncolor);
+    margin: 0 auto;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s linear;
+    text-transform: capitalize;
+}
+
+.rpo-btn:hover {
+    box-shadow: 0 0 10px #000 inset;
+}
+
+
+
+/* navbar start */
+
+nav {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--bgnav);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    position: fixed;
+    top: 0;
+}
+
+.logo img {
+    width: 15rem;
+}
+
+.menu ul,
+.menu-btn ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.menu ul li,
+a,
+.menu-btn ul li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.3s linear;
+    text-transform: capitalize;
+}
+
+.menu ul li,
+a:hover,
+.menu-btn ul li,
+a:hover {
+    color: var(--btncolor);
+}
+
+.space {
+    margin-left: 4rem;
+}
+
+.menu-btn {
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: all o.3s linear;
+}
+
+.menu-btn:hover {
+    background-color: var(--btncolor);
+    color: var(--bgnav);
+    border: 1px solid var(--btncolor);
+}
+
+#toggle-navbar {
+    appearance: none;
+}
+
+
+label {
+    margin-top: -1rem;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+/* navbar end */
+
+/* header end */
+
+/* main content start */
+
+
+main {
+    width: 90vw;
+    margin: 6rem auto;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cards .card {
+    width: 50%;
+    background-color: #262626;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s linear;
+}
+
+.cards .card:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.card-btn-date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card-btn {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50rem;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    background-color: var(--btncolor);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.card-btn:hover {
+    box-shadow: 0 0 10px #000 inset;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+.card-para {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: end;
+    font-weight: bold;
+}
+
+.card-para .fa-solid {
+    color: var(--btncolor);
+    transition: all 0.3s linear;
+}
+
+.card-para .fa-solid:hover{
+    scale: 1.2;
+}
+
+main a {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    text-decoration: underline;
+    transition: all 0.3 linear;
+}
+
+main a:hover {
+    color: var(--white);
+    text-shadow: 0 0 15px var(--white);
+}
+
+/* section 01 start */
+.section-1 {
+    width: 90vw;
+    margin: 6rem auto;
+    color: var(--white);
+}
+
+.section-1 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--btncolor);
+}
+
+.sec-01-last-div {
+    border-bottom: 1px solid var(--btncolor);
+}
+
+.fa-xmark,
+.fa-plus {
+    color: var(--btncolor);
+}
+
+/* section 01 end */
+
+/* section 02 start */
+
+.section-2 {
+    width: 100vw;
+    margin: 6rem auto;
+    background-color: var(--btncolor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sec-02-content {
+    width: 40%;
+    padding: 3rem;
+}
+
+.sec-02-content h2 {
+    color: var(--bgcolor);
+}
+
+.sec-02-content p {
+    font-weight: bold;
+}
+
+.sec-02-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--btncolor);
+    background-color: var(--bgcolor);
+    outline: none;
+    border: none;
+    border-radius: 50rem;
+    padding: 1rem 5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+.sec-02-btn:hover {
+    box-shadow: 0 0 10px var(--btncolor) inset;
+}
+
+.sec-02-image {
+    width: 60%;
+    text-align: end;
+    padding-right: 2.5rem;
+}
+
+.sec-02-image img {
+    width: 80%;
+}
+
+/* section 02 end */
+
+/* footer start */
+
+footer {
+    width: 100vw;
+    background-color: #262626;
+}
+
+.footer-menu {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    padding-bottom: 5rem;
+}
+
+.footer-menu img {
+    display: block;
+    width: 25%;
+}
+
+.footer-menu-list {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.footer-menu-list li {
+    list-style: none;
+    line-height: 2rem;
+}
+
+.footer-menu button {
+    text-transform: capitalize;
+    display: block;
+    width: 20%;
+    height: 3rem;
+}
+
+.footer-para {
+    width: 100%;
+    padding: 2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    color: var(--white);
+}
+
+.fa-circle-arrow-up {
+    font-size: 3rem;
+    color: var(--btncolor);
+    margin-right: 1rem;
+    transition: all 0.3s linear;
+}
+
+.fa-circle-arrow-up:hover{
+    text-shadow: 0 0 25px var(--bgcolor);
+    scale: 1.1;
+}
+
+/* footer end */
+
+
+/* ipad pro screen size media start */
+@media only screen and (max-width: 1200px) {
+
+    /* header start */
+    header {
+        width: 100%;
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 9rem;
+    }
+
+    .rpo-btn {
+        border-radius: 4rem;
+    }
+
+    .space {
+        margin-left: 0;
+    }
+
+    label {
+        display: block;
+    }
+
+    .menu ul,
+    .menu-btn ul {
+        flex-direction: column;
+        transition: all 0.3s linear;
+        width: 80%;
+        height: 50vh;
+        background: var(--bgnav);
+        position: absolute;
+        left: -100%;
+        top: -100%;
+        line-height: 1.5rem;
+        padding-top: 4rem;
+    }
+
+    #toggle-navbar:checked~ul {
+        left: 0;
+    }
+
+    /* header end */
+
+    /* section-2 start */
+    .sec-02-content h2 {
+        font-size: 2rem;
+    }
+
+    .sec-02-btn {
+        font-size: 0.8rem;
+    }
+}
+
+/* ipad pro screen size media end */
+
+
+
+
+
+
+/* ipad mini screen size media start */
+@media only screen and (max-width: 768px) {
+
+    /* header start */
+    header {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        padding-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+        padding-top: 35%;
+    }
+
+    .rpo-btn {
+        font-size: 1rem;
+        font-weight: 800;
+        padding: 0.5rem 0;
+    }
+
+    /* navbar start */
+    nav {
+        height: 4.5rem;
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .space {
+        margin-left: 0;
+    }
+
+
+    label {
+        display: block;
+    }
+
+    .menu ul,
+    .menu-btn ul {
+        flex-direction: column;
+        transition: all 0.3s linear;
+        width: 80%;
+        height: 60vh;
+        background: var(--bgnav);
+        position: absolute;
+        left: -100%;
+        top: 0;
+    }
+
+
+    #toggle-navbar:checked~ul {
+        left: 0;
+    }
+
+    /* navbar end */
+
+
+    /* section 02 start */
+    .sec-02-content {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sec-02-image {
+        padding-right: 0;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .sec-02-image img {
+        width: 80%;
+    }
+
+    /* section 02 end */
+
+    /* footer start */
+    .footer-menu {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-menu-list {
+        margin: 2rem 0;
+    }
+
+    .footer-menu-list ul {
+        padding: 0 3rem;
+    }
+
+    .footer-menu button {
+        width: 50%;
+    }
+
+    .fa-circle-arrow-up {
+        padding-right: 0rem;
+    }
+
+    /* footer end */
+}
+
+/* ipad mini screen size media end */
+
+
+
+
+
+/* iphone 14 pro max screen size media  start*/
+@media only screen and (max-width: 430px) {
+    
+    /* header start */
+    header {
+        width: 100vw;
+        height: 50vh;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .rpo-btn{
+        padding-bottom: 2rem;
+    }
+
+    nav{
+        height: 3.5rem;
+    }
+
+    .menu ul,
+    .menu-btn ul{
+        height: 60vh;
+        padding-bottom: 3rem;
+    }
+
+    .menu ul li,
+    .menu-btn ul li{
+        line-height: 0.8rem;
+    }
+
+    /* header end */
+
+
+
+    /* main content start */
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .cards .card {
+        width: 100%;
+    }
+    /* main content end */
+
+
+
+    /* footer start */
+    .footer-menu img {
+        width: 80%;
+        height: inherit;
+    }
+
+    .footer-menu-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer-menu button{
+        width: 90%;
+        margin-bottom: -4rem;
+    }
+
+    .fa-circle-arrow-up {
+        margin-right: 0;
+    }
+
+    /* footer end */
+
+
+}
+
+
+/* iphone 14 pro max screen size media  end*/
